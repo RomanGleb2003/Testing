@@ -1,0 +1,39 @@
+.chart{
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 68px;
+}
+
+.chart h3{
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    margin-left: 6px;
+    white-space: pre-line;
+}
+
+.consensus{
+    width: 50px;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+.circle{
+    margin-right: 20px;
+    box-sizing: border-box;
+    background: #082448;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+}
+
+.circle img{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+}

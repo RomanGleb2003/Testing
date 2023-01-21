@@ -1,0 +1,15 @@
+.movie_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    overflow-x: auto;
+    cursor: pointer;
+}
+
+.scroller_wrap{
+    transition: linear 0.3s;
+    opacity: 1;
+}

@@ -1,0 +1,10 @@
+.scroller_wrap_right:after{
+    content: '';
+    width: 60px;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 100%);
+    will-change: opacity;
+    pointer-events: none;
+}

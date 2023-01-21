@@ -1,0 +1,14 @@
+.btn_submit{
+    height: 46px;
+    padding: 10px 26px;
+    border: none;
+    background: linear-gradient(to right, #6daf03, #14be69, #1e76da);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    text-align: center;
+}

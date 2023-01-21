@@ -1,0 +1,45 @@
+.col{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.data{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.data h2{
+    margin: 0;
+}
+
+.avatar{
+    min-width: 56px;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #0c2e59;
+}
+
+.avatar h2 {
+    position: relative;
+    padding-left: 22px;
+    margin-top: 13px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.progressbar{
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 8px;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.progressbar h3{
+    position: relative;
+    margin: -18px 8px 0 90px;
+}

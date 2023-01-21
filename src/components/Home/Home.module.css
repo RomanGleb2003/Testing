@@ -1,0 +1,23 @@
+.home{
+    display: flex;
+    margin: 64px auto;
+    width: 100%;
+    max-width: 1340px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: #fff;
+}
+
+.section_back{
+    background-image: url("https://www.themoviedb.org/assets/2/v4/misc/trending-bg-39afc2a5f77e31d469b25c187814c0a2efef225494c038098d62317d923f8415.svg");
+    background-position: 50% 200px;
+    background-repeat: no-repeat;
+}
+
+.background{
+    background-image: url("https://www.themoviedb.org/t/p/w1920_and_h427_multi_faces/oo4Qn2q2MRpWVXeZnlIGYk38HPh.jpg");
+    background-position: 20% 10px;
+    background-repeat: no-repeat;
+    color: #294bf6;
+}

@@ -1,0 +1,37 @@
+.blocks{
+    display: flex;
+    padding: 20px 0 0 40px;
+    flex-direction: row; overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 30px;
+}
+.movie_thriller{
+    position: relative;
+    display: flex;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    width: 100%;
+    min-height: calc(150px * 1.5);
+    height: 240px;
+    background: #dbdbdb;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.content{
+    width: 100%;
+    padding: 26px 10px 12px 10px;
+    position: relative;
+    white-space: normal;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.content h1{
+    font-size: 1em;
+    margin: 0;
+    width: 100%;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}

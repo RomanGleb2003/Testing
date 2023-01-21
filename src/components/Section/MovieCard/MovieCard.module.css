@@ -1,0 +1,97 @@
+.movie_card{
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-height: 430px;
+}
+
+.movie_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-top: 10px;
+    overflow-x: auto;
+    cursor: pointer;
+}
+
+.column_content{
+    position: relative;
+    margin-left: 40px;
+    width: 150px;
+    min-width: 150px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin-top: 0;
+    overflow: visible;
+    height: auto;
+
+}
+
+.movie_img{
+    position: relative;
+    display: flex;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    width: 100%;
+    min-height: calc(150px * 1.5);
+    height: calc(150px * 1.5);
+    background: #dbdbdb;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.content{
+    width: 100%;
+    padding: 26px 10px 12px 10px;
+    position: relative;
+    white-space: normal;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.content h1{
+    font-size: 1em;
+    margin: 0;
+    width: 100%;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.content p{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,0.6);
+    box-sizing: border-box;
+}
+.consensus{
+    position: absolute;
+    top: -19px;
+    left: 10px;
+    width: 38px;
+    height: 38px;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: transform .2s;
+    transform: scale(1);
+    color: #02af58;
+}
+
+.ellipsis{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 4;
+    opacity: 0.6;
+}
+
+.blocks{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: row;
+}

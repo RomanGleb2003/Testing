@@ -1,0 +1,38 @@
+.consensus_user{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #0c2e59;
+}
+
+.consensus_score{
+    position: absolute;
+    bottom: 17px;
+    z-index: 2;
+    font-size: 7px;
+}
+
+.consensus_icon{
+    left: 0;
+    position: absolute;
+    rotate: -90deg;
+}
+
+circle{
+    fill: transparent;
+    stroke-width: 7px;
+    scale: 0.95;
+}
+
+.font{
+    font-weight: bold;
+    color: #dbdbdb;
+    z-index: 30;
+    display: block;
+    margin-left: -4px;
+    margin-top: 30%;
+    font-size: 11px;
+}

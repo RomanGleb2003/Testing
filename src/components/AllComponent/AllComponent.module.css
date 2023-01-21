@@ -1,0 +1,55 @@
+.column_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.column_content{
+    max-width: 1340px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+
+}
+
+.title{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.section_panel{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.page{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card{
+    position: relative;
+    height: 100%;
+    max-height: 480px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+    max-width: 200px;
+    width: 100%;
+}

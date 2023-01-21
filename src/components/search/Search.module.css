@@ -1,0 +1,86 @@
+body * {
+    box-sizing: border-box;
+}
+
+.media_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/VlHt27nCqOuTnuX6bku8QZapzO.jpg") ;
+}
+
+.column_wrapper{
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    font-size: 16px;
+}
+
+.content_wrapper {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 40px 30px 40px 30px;
+}
+
+.title{
+    width: 100%;
+    margin-bottom: 20px;
+    flex-grow: initial;
+}
+
+.title h2 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.title h3{
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.search {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    cursor: default;
+}
+
+.search input{
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 1.1em;
+    color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
