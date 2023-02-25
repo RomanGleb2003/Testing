@@ -1,4 +1,4 @@
 export const request = {
-    "On TV": "/tv/popular",
-    "In Theaters": '/movie/popular'
+    "On TV": "/discover/movie",
+    "In Theaters": '/movie/top_rated'
 }

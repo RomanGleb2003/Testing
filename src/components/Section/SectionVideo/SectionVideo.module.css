@@ -1,7 +1,8 @@
 .blocks{
     display: flex;
     padding: 20px 0 0 40px;
-    flex-direction: row; overflow-x: scroll;
+    flex-direction: row;
+    overflow-x: scroll;
     overflow-y: hidden;
     gap: 30px;
 }

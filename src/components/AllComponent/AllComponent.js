@@ -33,7 +33,7 @@ const AllComponent = (props) => {
                                                 <MovieComponent item={item}/>
                                             </div>
                                         )
-                                    }) : 'Loading ....'
+                                    }): <h3>Not Found</h3>
                                 }
                             </div>
                         </div>

@@ -1,4 +1,4 @@
 export const RequestTrend = {
-    "Today": "/tv/airing_today",
+    "Today": "/movie/now_playing",
     "This Week": '/movie/upcoming'
 }

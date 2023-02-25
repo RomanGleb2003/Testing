@@ -12,8 +12,12 @@
     align-items: flex-start;
     align-content: flex-start;
     padding-top: 10px;
-    overflow-x: auto;
+    overflow-x: inherit;
     cursor: pointer;
+}
+
+.movie_content:hover{
+    transform: scale(1.05);
 }
 
 .column_content{

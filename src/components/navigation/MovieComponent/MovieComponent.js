@@ -7,7 +7,7 @@ import {getPosterURL} from "../../../api/PosterUrl";
 const MovieComponent = ({item}) => {
     return (
         <Link to={`/movie_detail/${item.id}`}>
-            <img src={getPosterURL(item.poster_path)} alt={item.name}/>
+                <img src={getPosterURL(item.poster_path)} alt={item.name}/>
             <div className={classes.ellipsis}>
                 <Ellipsis/>
             </div>

@@ -22,7 +22,8 @@ const VideoComponent = () => {
             <div className={classes.column}>
                 <div className={classes.column_video}>
                     <div className={classes.content}>
-                        {video.map((item, index) => {
+                        {video && video.length>0 ?
+                        video.map((item, index) => {
                             return (
                                 <div key={index} className={classes.movie_video}>
                                     < iframe src={`https://www.youtube.com/embed/${item.key}`}
@@ -39,7 +40,7 @@ const VideoComponent = () => {
                                     ></iframe>
                                 </div>
                             )
-                        })}
+                        }) : <h3>There is no video for this movie</h3>}
                     </div>
                 </div>
             </div>

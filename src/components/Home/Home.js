@@ -18,9 +18,8 @@ const Home = () => {
     const [isVideo, setIsVideo] = useState([]);
     const [sectionToggle, setSectionToggle] = useState({
         first: 'In Theaters',
-        second: 'Movies',
-        third: 'In Theaters',
-        four: 'Today'
+        second: 'Today',
+        third: 'In Theaters'
     })
 
     const handleToggledValue = (section, selectedValue) => {
@@ -40,11 +39,11 @@ const Home = () => {
     }, [sectionToggle.first]);
 
     useEffect(() => {
-        const fetchTv = async () => {
-            const {data} = await tmdb.get(RequestMovie[sectionToggle.second])
-            setMovie(data.results)
+        const fetchTrend = async () => {
+            const {data} = await tmdb.get(RequestTrend[sectionToggle.second])
+            setTrend(data.results)
         }
-        fetchTv()
+        fetchTrend()
     }, [sectionToggle.second]);
 
     useEffect(() => {
@@ -55,13 +54,7 @@ const Home = () => {
         fetchVideo()
     }, [sectionToggle.third]);
 
-    useEffect(() => {
-        const fetchTrend = async () => {
-            const {data} = await tmdb.get(RequestTrend[sectionToggle.four])
-            setTrend(data.results)
-        }
-        fetchTrend()
-    }, [sectionToggle.four]);
+
 
     return (
         <div className={classes.home}>
@@ -73,13 +66,16 @@ const Home = () => {
             >
                 <MovieList films={films}/>
             </Section>
-            <Section
-                title="Free To Watch"
-                items={["Movies", "TV"]}
-                onToggle={handleToggledValue.bind(null, 'second')}
-            >
-                <MovieList films={movie}/>
-            </Section>
+
+            <div className={classes.section_back}>
+                <Section
+                    title="Trending"
+                    items={["Today", "This Week"]}
+                    onToggle={handleToggledValue.bind(null, 'second')}
+                >
+                    <MovieList films={trend}/>
+                </Section>
+            </div>
             <div className={classes.background}>
                 <Section
                     title="Latest Trailers"
@@ -89,16 +85,7 @@ const Home = () => {
                     <SectionVideo films={isVideo}/>
                 </Section>
             </div>
-            <div className={classes.section_back}>
-                <Section
-                    title="Trending"
-                    items={["Today", "This Week"]}
-                    onToggle={handleToggledValue.bind(null, 'four')}
-                >
-                    <MovieList films={trend}/>
-                </Section>
-                <LeaderBoard/>
-            </div>
+            <LeaderBoard/>
         </div>
     )
 }

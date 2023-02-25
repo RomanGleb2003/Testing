@@ -12,7 +12,6 @@ import Drama from "./components/navigation/Drama";
 import TopRated from "./components/navigation/TopRated";
 
 function App() {
-    console.log('bgg')
     return (
         <div>
             <Header />

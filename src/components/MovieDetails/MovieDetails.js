@@ -12,7 +12,7 @@ const MovieDetails = () => {
     const params = useParams()
 
     const getMovie = async () => {
-        const result = await tmdb.get(`tv/${params.id}`);
+        const result = await tmdb.get(`movie/${params.id}`);
         setMovie(result.data);
         setGenres(result.data.genres)
     }
@@ -25,11 +25,11 @@ const MovieDetails = () => {
 
     return (
         <div>
-            <div className={classes.movie_back}>
+            <div>
                 <DetailsComponent average={average} genres={genres} movie={movie}/>
-            </div>
+                </div>
             <section className={classes.section_video}>
-                <VideoComponent/>
+                    <VideoComponent/>
             </section>
         </div>
     )
