@@ -1,6 +1,6 @@
 import React from "react";
 import SearchResults from "./components/SearchResults/SearchResults";
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, Navigate} from "react-router-dom";
 import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 import MovieDetails from "./components/MovieDetails/MovieDetails";
@@ -10,6 +10,16 @@ import TvShows from "./components/navigation/TvShows";
 import Kids from "./components/navigation/Kids";
 import Drama from "./components/navigation/Drama";
 import TopRated from "./components/navigation/TopRated";
+import * as PropTypes from "prop-types";
+
+function Redirect(props) {
+    return null;
+}
+
+Redirect.propTypes = {
+    from: PropTypes.string,
+    to: PropTypes.string
+};
 
 function App() {
     return (
@@ -24,7 +34,8 @@ function App() {
                 <Route path="/kids" element={<Kids/>}></Route>
                 <Route path="/drama" element={<Drama/>}></Route>
                 <Route path="/top" element={<TopRated/>}></Route>
-            </Routes>
+                {/*<Route path='*' element={<Home />} />*/}
+                <Route path="*" element={<Navigate to="/home" replace />} />            </Routes>
             <Footer />
         </div>
     );

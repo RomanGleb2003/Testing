@@ -27,7 +27,7 @@ const Header = () => {
                                 navData.map((item) => {
                                     return (
                                         <div key={item.name}>
-                                            git <Link to={item.link}>{item.name}</Link>
+                                            <Link to={item.link}>{item.name}</Link>
                                         </div>
                                     )})
                             }
