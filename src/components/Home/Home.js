@@ -5,7 +5,6 @@ import {useEffect, useState} from "react";
 import tmdb from "../../api/Tmdb";
 import {request} from "../../api/Request";
 import Search from "../search/Search";
-import {RequestMovie} from "../../api/RequestMovie";
 import {RequestTrend} from "../../api/RequestTrend";
 import LeaderBoard from "../LeaderBoard/LeaderBoard";
 import SectionVideo from "../Section/SectionVideo/SectionVideo";

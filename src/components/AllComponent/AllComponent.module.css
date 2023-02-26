@@ -18,6 +18,13 @@
     margin-bottom: 20px;
 }
 
+.load{
+    height: 390px;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+}
+
 .content{
     width: 100%;
     display: flex;

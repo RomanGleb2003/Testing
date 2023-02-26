@@ -10,6 +10,7 @@
     z-index: 20;
     transition: top 0.2s linear;
     color: white;
+    flex-direction: column;
 }
 
 .column {

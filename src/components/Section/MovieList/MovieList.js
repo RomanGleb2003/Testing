@@ -13,7 +13,7 @@ const MovieList = ({films}) => {
            const {data} = await tmdb.get(request[fetch])
            setMovies(data.results)
        }
-        loading ? <p>loading</p> : fetchMovies()
+       fetchMovies()
     }, [fetch]);
 
     return(
