@@ -3,7 +3,7 @@
     font-weight: 600;
     font-size: 35px;
     position: relative;
-    bottom: 80px;
+    bottom: 100px;
     min-height: 390px;
-    height: 100%;
+    height: 100vh;
 }

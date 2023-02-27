@@ -12,7 +12,6 @@ import {RequestTv} from "../../api/RequestTv";
 
 const Home = () => {
     const [films, setFilms] = useState([]);
-    const [movie, setMovie] = useState([]);
     const [trend, setTrend] = useState([]);
     const [isVideo, setIsVideo] = useState([]);
     const [sectionToggle, setSectionToggle] = useState({

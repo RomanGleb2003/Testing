@@ -44,6 +44,7 @@ body * {
 }
 
 .title h2 {
+    width: 100%;
     font-size: 3em;
     font-weight: 700;
     line-height: 1;
@@ -58,6 +59,7 @@ body * {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    width: 100%;
 }
 
 .search {

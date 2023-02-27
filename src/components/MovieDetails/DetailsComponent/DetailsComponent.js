@@ -7,7 +7,7 @@ const DetailsComponent = ({average, genres, movie}) => {
     return (
         <div className={classes.container}>
             <img src={getBackURL(movie.backdrop_path)} alt={movie.name}
-                 style={{position: "absolute", height: "700px", zIndex: "-1"}}/>
+                 style={{position: "absolute", maxWidth: "100%", height: "700px", zIndex: "-1"}}/>
             <div className={classes.movie_back}>
                 <div className={classes.movie_card}>
                     <div className={classes.poster}>

@@ -11,12 +11,17 @@ const SearchResults = () => {
     const [filtered, setFiltered] = useState([]);
     const location = useLocation();
     const query = new URLSearchParams(location.search).get("query");
+    const [loading, setLoading] = useState(true);
     const getResults = async () => {
        await tmdb.get(`/search/movie?query=${query}&page=`+page)
             .then((response) => {
                 setMovie(response.data.results)
                 setPagination(response.data.total_pages);
                 setFiltered(response.data.results);
+                setLoading(false)
+                if (loading===true){
+                    return loading
+                }
             })
     }
 
@@ -39,6 +44,7 @@ const SearchResults = () => {
                     page={page}
                     filtered={filtered}
                     setFiltered={setFiltered}
+                    loading={loading}
                 />
             </div>
         </div>

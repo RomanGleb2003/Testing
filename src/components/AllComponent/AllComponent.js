@@ -14,15 +14,7 @@ const override: CSSProperties = {
 
 const AllComponent = (props) => {
     const [genre, setGenre] = useState(0)
-    let [loading, setLoading] = useState(false);
     let [color, setColor] = useState("#ffffff");
-    useEffect( () => {
-        setLoading(true)
-        setTimeout(()=> {
-            setLoading(false)
-        }, 800)
-    },[])
-
 
     return (
         <div>
@@ -42,10 +34,10 @@ const AllComponent = (props) => {
                     <div className={classes.content}>
                         <div className={classes.section_panel}>
                             <div className={classes.page}>
-                                { loading ?
+                                { props.loading ?
                                     <div className={classes.load}><ClipLoader
                                         color={color}
-                                        loading={loading}
+                                        loading={props.loading}
                                         cssOverride={override}
                                         size={150}
                                         aria-label="Loading Spinner"

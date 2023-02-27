@@ -7,13 +7,18 @@ const NavComponent = (props) => {
     const [page, setPage] = useState(1)
     const [pagination, setPagination] = useState(0)
     const [filtered, setFiltered] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(()  =>  {
         const getMovie = async () => {
-            const {data} = await tmdb.get(props.way+page)
+            const {data} = await tmdb.get(props.way + page)
             setMovies(data.results)
             setPagination(data.total_pages);
             setFiltered(data.results);
+            setLoading(false)
+            if (loading===true){
+                return loading
+            }
         }
         getMovie()
     }, [page]);
@@ -30,6 +35,7 @@ const NavComponent = (props) => {
         page={page}
         setFiltered={setFiltered}
         filtered={filtered}
+        loading={loading}
     />;
 }
 
