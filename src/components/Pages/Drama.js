@@ -1,4 +1,4 @@
-import NavComponent from "./NavComponent/NavComponent";
+import NavComponent from "../navigation/NavComponent/NavComponent";
 
 const Drama = () => {
     const Way = "/discover/movie?with_genres=18&sort_by=vote_average.desc&vote_count.gte=10&page="

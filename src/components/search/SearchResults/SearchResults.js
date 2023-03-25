@@ -1,8 +1,8 @@
 import {useLocation} from "react-router-dom";
 import React, {useState} from "react";
-import tmdb from "../../api/Tmdb";
+import tmdb from "../../../api/Tmdb";
 import {useEffect} from "react";
-import AllComponent from "../AllComponent/AllComponent";
+import AllComponent from "../../AllComponent/AllComponent";
 
 const SearchResults = () => {
     const [movie, setMovie] = useState([]);

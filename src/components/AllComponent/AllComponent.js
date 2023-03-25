@@ -1,20 +1,15 @@
-import Pagination from "../navigation/Pagination/Pagination";
+import Pagination from "../ui/Pagination/Pagination";
 import MovieComponent from "../navigation/MovieComponent/MovieComponent";
 import classes from "./AllComponent.module.css";
 import Genres from "../Genres/Genres";
-import React, {useEffect, useState} from "react";
-import ClipLoader from "react-spinners/ClipLoader";
+import React, {useState} from "react";
 import NotFound from "../ui/NotFound/NotFound";
+import Loading from "../ui/Loading/Loading";
 
-const override: CSSProperties = {
-    display: "block",
-    margin: "0 auto",
-    borderColor: "red",
-};
+
 
 const AllComponent = (props) => {
     const [genre, setGenre] = useState(0)
-    let [color, setColor] = useState("#ffffff");
 
     return (
         <div>
@@ -35,14 +30,7 @@ const AllComponent = (props) => {
                         <div className={classes.section_panel}>
                             <div className={classes.page}>
                                 { props.loading ?
-                                    <div className={classes.load}><ClipLoader
-                                        color={color}
-                                        loading={props.loading}
-                                        cssOverride={override}
-                                        size={150}
-                                        aria-label="Loading Spinner"
-                                        data-testid="loader"
-                                    /></div>
+                                    <div className={classes.load}><Loading/></div>
                                          :
                                     props.filtered && props.filtered.length > 0 ?
                                         props.filtered.map((item, index) => {

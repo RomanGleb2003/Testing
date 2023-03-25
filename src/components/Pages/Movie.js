@@ -1,4 +1,4 @@
-import NavComponent from "./NavComponent/NavComponent";
+import NavComponent from "../navigation/NavComponent/NavComponent";
 
 const Movie = () => {
     const Way = "/discover/movie?sort_by=popularity.desc&page="

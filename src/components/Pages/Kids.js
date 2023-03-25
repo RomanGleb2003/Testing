@@ -1,4 +1,4 @@
-import NavComponent from "./NavComponent/NavComponent";
+import NavComponent from "../navigation/NavComponent/NavComponent";
 
 const Kids = () => {
     const Way = "/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&page="
